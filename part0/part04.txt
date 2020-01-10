@@ -1,0 +1,11 @@
+title User Sends Form Data
+User->Browser: Inputs new note into box.
+Browser->Server: HTTP Post Request sent to server address new_note
+Server->Server: Creates new note object from HTTP Post Request, appends to array notes
+Server->Browser: Sends a URL Redirect to Browser
+Browser->Server: HTTP GET Request sent to address defined in URL Redirect Header
+Browser->Browser: Reloads Page
+Browser->+Server: 3 HTTP requests for Style Sheet, Javascript code, json of notes
+Server-->-Browser: Sends requested files to browser
+Browser-> User: Displays same webpage with new note at last line.
+end note

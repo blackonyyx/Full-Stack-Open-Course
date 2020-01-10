@@ -1,0 +1,15 @@
+title User Accesses SPA version of Notes
+User->Browser: Clicks Link/Types URL
+Browser->Server: HTTP Get Request to https://fullstack-exampleapp.herokuapp.com/spa
+Server-->Browser: DOM file
+Browser->Server: HTTP GET Request to https://fullstack-exampleapp.herokuapp.com/main.css
+Server->Browser: main.css
+Browser->Server: HTTP Get Request to https://fullstack-exampleapp.herokuapp.com/spa.js
+Server-> Browser: spa.js
+note over Browser:
+browser starts executing spa.js code
+This renders the webpage and executes code
+that requests JSON data from server 
+end note
+Browser-> User: Displays rendered webpage 
+end note

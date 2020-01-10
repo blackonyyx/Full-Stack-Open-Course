@@ -1,0 +1,14 @@
+title User Sends Form Data-SPA Version
+User->Browser: Inputs new note into box and submits
+note over Browser: 
+Input text is packaged into a POST request by spa.js
+note is then sent as a JSON packet in a HTTP Post Request.
+end note
+
+Browser->Server: HTTP Post Request sent via spa.js to server
+note over Browser:
+Display new note on local browser
+end note
+note over Server:
+Server appends new note to list of notes
+end note
